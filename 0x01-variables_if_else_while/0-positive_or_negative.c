@@ -5,21 +5,20 @@
 #include <stdio.h>
 
 /**
- * main - Prints if a number is negative, positive or zero
- * Return: (Terminated)
- * 
+ * main - prints if a number is zero, positive or negative
+ * Return: Always (Terminated)
+ *
  */
 
-int main (void)
+int main(void)
 {
 	int n;
-
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
-	if  (n > 0)
+	
+	if (n < 0)
 	{
-		printf("%d is positive\n", n);
+		printf("%d is negative\n", n);
 	}
 	else if (n == 0)
 	{
@@ -27,7 +26,7 @@ int main (void)
 	}
 	else
 	{
-		printf("%d is negative\n", n);
+		printf("%d is positive\n", n);
 	}
 	return (0);
 }
