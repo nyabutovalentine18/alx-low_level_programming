@@ -1,23 +1,23 @@
 #include <stdio.h>
 
 /**
-*main - entry point
-*Return: 0
+*main - prints the sum of fibonacci numbers
+*less than 4000000
+*Return: Nothing
 */
 
 int main(void)
 {
-int m = 0;
-long n = 1, p = 2;
-long sum = p;
+int i = 0;
+long j = 1, k = 2, sum = k;
 
-while (p + n < 4000000)
+while (k + j < 4000000)
 {
-p = +n;
-if (p % 2 == 0)
-sum += p;
-n = p - n;
-++m;
+k += j;
+if (k % 2 == 0)
+sum += k;
+j = k - j;
+++i;
 }
 printf("%ld\n", sum);
 return (0);
