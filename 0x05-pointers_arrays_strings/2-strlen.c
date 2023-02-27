@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
 *_strlen - a function that returns the length of a string
@@ -8,12 +8,13 @@
 *Return: The string length
 */
 
-int _strlen(const char *s)
+int _strlen(char *s)
 {
-size_t length = 0;
+int i = 0;
 
-while (*s++)
-length++;
-
-return (length);
+while (s[i] != '\0')
+{
+i++;
+}
+return (i);
 }
