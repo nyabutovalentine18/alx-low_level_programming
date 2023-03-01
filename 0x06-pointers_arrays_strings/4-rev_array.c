@@ -2,22 +2,28 @@
 
 /**
 *reverse_array - reverses the content of an array of integers
-*@a: Array checked
+*@a: array a
 *@n: number of array elements
-*Return: reverse
+*Return: rev
 */
 
-void reverse_array(int *a, int n);
+void reverse_array(int *a, int n)
 {
-int i;
-int j;
+int c;
+int b;
+int d;
+int *p;
+p = a;
 
-for (i = 0; i < n; i++)
+for (c = 0; c < n; c++)
 {
-
-n--;
-j = a[i];
-a[i] = a[n];
-a[n] = j;
+p++
+}
+for (b = 0; b < n / 2; b++)
+{
+d = a[b];
+a[b] = *p;
+*p = d;
+p--
 }
 }
