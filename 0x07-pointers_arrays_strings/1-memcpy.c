@@ -14,18 +14,12 @@ int a;
 int b;
 
 a = 0;
-while (dest[a] != '\0')
+b = n;
+for (; a < b; a++)
 {
-a++;
+dest[a] = src[a];
+n--;
 }
-b = 0;
-while (src[b] != '\0')
-{
-dest[a] = src[b];
-a++;
-b++;
-}
-dest[a] = '\0';
 return (dest);
 }
 
