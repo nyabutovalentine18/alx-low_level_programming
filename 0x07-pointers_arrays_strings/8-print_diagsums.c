@@ -21,5 +21,5 @@ for (d = size - 1; d >= 0; d--)
 {
 sum2 += a[d * size + (size - d - 1)];
 }
-printf("%d %d", sum1, sum2);
+printf("%d %d\n", sum1, sum2);
 }
