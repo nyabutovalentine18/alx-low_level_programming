@@ -1,32 +1,37 @@
 #include "main.h"
 
-int the_prime(int n, int m);
 /**
-*is_prime_number - checks for prime number
+*is_prime - checks for prime number
 *@n: number to be checked
+*@m: number to be checked
 *Return: integer
 */
 
-int is_prime_number(int n);
+int is_prime(unsigned int n, unsigned int m)
 {
-return (the_prime(n, 1));
+if (n % m == 0)
+{
+if (n == m)
+return (1);
+else
+return (0);
 }
+return (0 + is_prime(n, m + 1));
+}
+
 /**
-*the_prime - checks the prime numbers
-*@n: number
-*@m: iterator
-*return a 1 or 0
+* is_prime_number - printing prime numbers
+* @n: input integer value
+* Return: integer
 */
 
-int the_prime(int n, int m)
+int is_prime_number(int n)
 {
-if (n <= 1)
+if (n == 0)
 return (0);
-
-if (n % m == 0 && m > 1)
+if (n < 0)
 return (0);
-
-if ((n / m) < m)
-return (1);
-return (is_prime_number(n, m + 1));
+if (n == 1)
+return (0);
+return (is_prime(n, 2));
 }
