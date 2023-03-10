@@ -18,7 +18,8 @@ return (1 + _strlen_recursion(s));
 }
 
 /**
-*comparing- compares strings
+*comparing - compares strings
+*@s: string to receive
 *@a: first iterative
 *@b: secod iterative
 *Return: 0
@@ -40,7 +41,7 @@ return (0);
 *Return: 0
 */
 
-int is_palindrome(char*s)
+int is_palindrome(char *s)
 {
 if (*s == '\0')
 return (1);
