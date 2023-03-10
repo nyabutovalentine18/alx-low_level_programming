@@ -10,7 +10,7 @@
 */
 int main(int argc, char *argv[])
 {
-int result, num1, num2;
+int num1, num2;
 
 if (argc != 3)
 {
@@ -19,8 +19,7 @@ return (1);
 }
 num1 = atoi(argv[1]);
 num2 = atoi(argv[2]);
-result = num1 * num2;
 
-printf("%d\n", result);
+printf("%d\n", num1 *num2);
 return (0);
 }
