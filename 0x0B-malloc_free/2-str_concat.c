@@ -26,7 +26,7 @@ while (s2[b])
 b++;
 
 d = a + b;
-s = malloc((sizeof(char) *d) + 1);
+s = malloc((sizeof(char) * d) + 1);
 if (s == NULL)
 return (NULL);
 
