@@ -1,5 +1,6 @@
-#include <stdlib.h>
 #include "main.h"
+#include <stdlib.h>
+
 /**
 * alloc_grid - alloc grid
 * @width: width
