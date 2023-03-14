@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -37,7 +36,7 @@ while (av[i][j])
 {
 s[k] = av[i][j];
 k++;
-j++
+j++;
 }
 s[k] = '\n';
 j = 0;
