@@ -77,6 +77,7 @@ if ((*newdog).owner == NULL)
 {
 free(newdog);
 free((*newdog).name);
+free((*newdog).owner);
 return (NULL);
 }
 _strcpy((*newdog).name, name);
