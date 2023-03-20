@@ -1,16 +1,18 @@
 #include "dog.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
 *_strlen - checks the length of the strings
-*@s: string
+*@s: string pointer
 *
 *Return: string length
 */
 
 int _strlen(char *s)
 {
-int i;
+int i = 0;
+
 while (s[i] != '\0')
 {
 i++;
@@ -45,7 +47,7 @@ return (dest);
 /**
 **new_dog - creates a new dog
 *@name: first element
-*@age: seconf element
+*@age: second element
 *@owner: third element
 *
 *Return: pointer to the new dog if successful, otherwise NULL
