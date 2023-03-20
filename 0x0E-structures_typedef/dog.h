@@ -2,6 +2,7 @@
 #define STRUCT_H
 
 /**
+*struct dog - holds main information
 *@name: First element
 *@age: second element
 *@owner: third element
