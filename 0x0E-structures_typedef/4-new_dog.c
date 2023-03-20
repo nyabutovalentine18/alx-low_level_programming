@@ -19,7 +19,7 @@ return (i);
 }
 
 /**
-*_strcpy: copies strings from src to dest
+*_strcpy - copies strings from src to dest
 *@src: string source
 *@dest: string destination
 *
@@ -61,7 +61,7 @@ len1 = _strlen(name);
 len2 = _strlen(owner);
 
 dog = malloc(sizeof(dog_t));
-if(dog == NULL)
+if (dog == NULL)
 return (NULL);
 (*dog).name = malloc(sizeof(char) * (len1 + 1));
 if ((*dog).name == NULL)
@@ -72,7 +72,7 @@ return (NULL);
 (*dog).owner = malloc(sizeof(char) * (len2 + 1));
 if ((*dog).owner == NULL)
 {
- free(dog);
+free(dog);
 free((*dog).name);
 return (NULL);
 }
