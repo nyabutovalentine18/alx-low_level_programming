@@ -14,7 +14,7 @@ va_list strings;
 unsigned int j;
 char *ptr;
 
-va_start (strings, n);
+va_start(strings, n);
 
 for (j = 0; j < n; j++)
 {
