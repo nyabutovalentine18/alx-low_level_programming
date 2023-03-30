@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
-*add_node - Add an element to a list 
+*add_node - Add an element to a list
 *at the front of the list
 *@head: Pointer to the pointer to the start of the list
 *@str: Pointer to the string
