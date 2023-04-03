@@ -14,7 +14,7 @@ k = 0;
 while (h != NULL)
 {
 k++;
-h->next = h;
+h = h->next;
 }
 return (k);
 }
