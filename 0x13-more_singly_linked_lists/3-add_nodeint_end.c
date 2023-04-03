@@ -23,7 +23,7 @@ if (*head == NULL)
 *head = newnode;
 return (newnode);
 }
-while (temp->next != 0)
+while (temp->next)
 temp = temp->next;
 temp->next = newnode;
 return (newnode);
