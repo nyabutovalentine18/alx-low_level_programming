@@ -19,21 +19,21 @@ temp = (*head);
 }
 if (index == 0)
 {
-(*head) = temp->next;
-free(temp);
+next = (*head)->next;
+free(*head);
+*head = next;
 return (1);
 }
-for (m = 0; temp && m < index - 1; m++)
-		{
+temp = *head;
+for (m = 0; index - 1; m++)
+{
+if (temp->next == NULL)
+return (-1);
 temp = temp->next;
 }
-if (temp == NULL || !(temp->next))
-{
-return (-1);
-}
-next = temp->next->next;
-free(temp->next);
-temp->next = next;
+next = temp->next;
+temp->next = next->next;
+free(next);
 return (1);
 }
 
