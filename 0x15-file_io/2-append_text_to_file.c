@@ -19,8 +19,8 @@ return (-1);
 
 if (text_content != NULL)
 {
-for (k = 0; text_content[k]; k++)
-;
+for (k = 0; text_content[k];)
+k++;
 }
 
 o = open(filename, O_WRONLY | O_APPEND);
