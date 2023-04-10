@@ -1,25 +1,25 @@
 #include "main.h"
 
+
 /**
-* clear_bit -  sets the value of a bit to 0 at a given index.
-*@n: the inter containing bits
-* @index: index
+* flip_bits -
+* returns the number of bits you would need
+*to flip to get from one number to another.
+* @n: first element
+* @m: second element
 *
-* Return: integer
+* Return: the number of bits flipped
 */
 
-int clear_bit(unsigned long int *n, unsigned int index)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-unsigned long int k;
+unsigned long int result = n ^ m;
+unsigned int res = 0;
 
-if (index >= sizeof(unsigned long int) * 8)
+while (result != 0)
 {
-return (-1);
+res++;
+result &= (result - 1);
 }
-
-k = ~(1UL << index);
-
-*n &= k;
-return (1);
+return (res);
 }
-
