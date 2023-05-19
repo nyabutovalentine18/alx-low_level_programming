@@ -23,7 +23,7 @@ return (NULL);
 newnode->n = n;
 newnode->next = NULL;
 
-if (*h == NULL && idx == 0)
+if (idx == 0)
 return (add_dnodeint(h, n));
 
 for (i = 0; temp && i < idx; i++)
