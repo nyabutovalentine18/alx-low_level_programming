@@ -18,7 +18,7 @@ unsigned int i = 0;
 newnode = malloc(sizeof(dlistint_t));
 temp = *h;
 
-if (h == NULL)
+if (h == NULL || newnode == NULL)
 return (NULL);
 
 newnode->n = n;
